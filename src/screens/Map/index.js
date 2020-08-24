@@ -2,7 +2,6 @@ import React, {useEffect, useState, useContext} from 'react';
 import {ThemeContext} from 'styled-components'
 
 import {getCurrentPosition} from 'utils/geolocation';
-import {isIOS} from 'utils/common';
 import {showFlashMessage, MESSAGE_TYPES} from 'utils/flashMessages'
 
 import Map from 'components/Map';
@@ -28,7 +27,7 @@ const MapScreen = () => {
 
   return (
     <S.Container>
-      <Map userCoords={coordinates} isGoogleMap={!isIOS()} />
+      <Map userCoords={coordinates} />
     </S.Container>
   );
 };
