@@ -25,11 +25,10 @@ const MapScreen = () => {
     });
   }, []);
 
-  const coordsIsSetted = !!coordinates.latitude && !!coordinates.longitude;
 
   return (
     <S.Container>
-      {coordsIsSetted && <Map coords={coordinates} isGoogleMap={!isIOS()} />}
+      <Map userCoords={coordinates} isGoogleMap={!isIOS()} />
     </S.Container>
   );
 };
