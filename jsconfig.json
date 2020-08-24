@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@screens": ["./screens"],
+      "@components": ["./components"],
+      "@navigation": ["./navigation"],
+      "@services": ["./services"],
+      "@store": ["./store"],
+      "@i18n": ["./i18n"],
+      "@utils": ["./utils"],
+      "@theme": ["./theme"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
