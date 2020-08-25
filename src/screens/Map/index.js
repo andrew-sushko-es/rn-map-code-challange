@@ -25,7 +25,7 @@ const MapScreen = () => {
     );
   }, []);
 
-  const isGoogleMapView = USE_IOS_NATIVE_MAP ? !isIOS() : true;
+  const isGoogleMapView = isIOS() ? !!USE_IOS_NATIVE_MAP : true;
 
   return (
     <S.Container>

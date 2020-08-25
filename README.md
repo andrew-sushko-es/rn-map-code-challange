@@ -17,7 +17,7 @@
 
 ## .env variables
 
-- `USE_IOS_NATIVE_MAP`: true/false - add possibility to change GoogleMaps to native IOS maps for IOS devices
+- `USE_IOS_NATIVE_MAP`: 1(true)/0(false) - add possibility to change GoogleMaps to native IOS maps for IOS devices
 
 ## Running the project(Android)
 

@@ -10,21 +10,23 @@ const Map = (props) => {
 
   const coordsIsSetted = !!userCoords.latitude && !!userCoords.longitude;
 
-  const regionProp = coordsIsSetted ? {
-    initialRegion: {
-      latitude,
-      longitude,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421,
-    }
-  } : {}
+  const regionProp = coordsIsSetted
+    ? {
+        initialRegion: {
+          latitude,
+          longitude,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        },
+      }
+    : {};
 
   return (
     <S.MapContainer
       provider={isGoogleMap ? PROVIDER_GOOGLE : null}
       {...regionProp}
       {...otherProps}>
-        {coordsIsSetted && <S.MapMarker coordinate={userCoords} />}
+      {coordsIsSetted && <S.MapMarker coordinate={userCoords} />}
     </S.MapContainer>
   );
 };
