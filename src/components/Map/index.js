@@ -8,7 +8,7 @@ const Map = (props) => {
   const {userCoords, isGoogleMap, otherProps} = props;
   const {latitude, longitude} = userCoords;
 
-  const coordsIsSetted = !!userCoords.latitude && !!userCoords.longitude;
+  const coordsIsSetted = !!latitude && !!longitude;
 
   const regionProp = coordsIsSetted
     ? {
