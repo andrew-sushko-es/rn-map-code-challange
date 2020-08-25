@@ -16,7 +16,6 @@ const getColorsByType = (type, theme) => {
 }
 
 export const showFlashMessage = (message, type, theme) => {
-    console.log(getColorsByType(type, theme))
     showMessage({
         message,
         type,
