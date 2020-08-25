@@ -25,8 +25,8 @@ const MapScreen = () => {
     );
   }, []);
 
-  const isGoogleMapView = isIOS() ? !!USE_IOS_NATIVE_MAP : true;
-
+  const isGoogleMapView = isIOS() ? !USE_IOS_NATIVE_MAP : true;
+  
   return (
     <S.Container>
       <Map userCoords={coordinates} isGoogleMap={isGoogleMapView} />
